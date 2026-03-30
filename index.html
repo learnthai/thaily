@@ -493,47 +493,30 @@ body{font-family:'Syne',sans-serif;background:#FBC83D;min-height:100vh;overflow-
     <svg class="map-svg" viewBox="0 0 380 860" xmlns="http://www.w3.org/2000/svg">
       <rect width="380" height="860" fill="#F5E0A8"/>
       <text x="190" y="36" text-anchor="middle" font-family="Oswald,sans-serif" font-size="13" font-weight="700" fill="#FD540B" letter-spacing="2">★ THAILAND ADVENTURE ★</text>
-      <path d="M80,80  A 80,80 0 0 0 190,155" fill="none" stroke="#1A1A1A" stroke-width="5" stroke-linecap="round" stroke-dasharray="7,6"/>
-      <path d="M190,155 A 80,80 0 0 1 300,230" fill="none" stroke="#1A1A1A" stroke-width="5" stroke-linecap="round" stroke-dasharray="7,6"/>
-      <path d="M300,230 A 80,80 0 0 1 190,310" fill="none" stroke="#FD540B" stroke-width="5" stroke-linecap="round" stroke-dasharray="7,6" opacity=".45"><animate attributeName="opacity" values=".45;1;.45" dur="1.6s" repeatCount="indefinite"/></path>
-      <path d="M190,310 A 80,80 0 0 0 80,390" fill="none" stroke="#FD540B" stroke-width="5" stroke-linecap="round" stroke-dasharray="7,6" opacity=".45"><animate attributeName="opacity" values=".45;1;.45" dur="1.6s" repeatCount="indefinite"/></path>
-      <path d="M80,390  A 80,80 0 0 0 190,465" fill="none" stroke="#ccc" stroke-width="5" stroke-linecap="round" stroke-dasharray="7,6"/>
-      <path d="M190,465 A 80,80 0 0 1 300,540" fill="none" stroke="#ccc" stroke-width="5" stroke-linecap="round" stroke-dasharray="7,6"/>
-      <path d="M300,540 A 80,80 0 0 1 190,615" fill="none" stroke="#ccc" stroke-width="5" stroke-linecap="round" stroke-dasharray="7,6"/>
-      <path d="M190,615 A 80,80 0 0 0 80,690" fill="none" stroke="#ccc" stroke-width="5" stroke-linecap="round" stroke-dasharray="7,6"/>
-      <path d="M80,690  A 80,80 0 0 0 190,753" fill="none" stroke="#ccc" stroke-width="5" stroke-linecap="round" stroke-dasharray="7,6"/>
-      <path d="M190,753 A 80,80 0 0 1 300,816" fill="none" stroke="#ccc" stroke-width="5" stroke-linecap="round" stroke-dasharray="7,6"/>
+      <!-- paths with IDs for dynamic colour update -->
+      <path id="path-01" d="M80,80  A 80,80 0 0 0 190,155" fill="none" stroke="#1A1A1A" stroke-width="5" stroke-linecap="round" stroke-dasharray="7,6"/>
+      <path id="path-12" d="M190,155 A 80,80 0 0 1 300,230" fill="none" stroke="#1A1A1A" stroke-width="5" stroke-linecap="round" stroke-dasharray="7,6"/>
+      <path id="path-23a" d="M300,230 A 80,80 0 0 1 190,310" fill="none" stroke="#ccc" stroke-width="5" stroke-linecap="round" stroke-dasharray="7,6"/>
+      <path id="path-23b" d="M190,310 A 80,80 0 0 0 80,390"  fill="none" stroke="#ccc" stroke-width="5" stroke-linecap="round" stroke-dasharray="7,6"/>
+      <path id="path-34a" d="M80,390  A 80,80 0 0 0 190,465" fill="none" stroke="#ccc" stroke-width="5" stroke-linecap="round" stroke-dasharray="7,6"/>
+      <path id="path-34b" d="M190,465 A 80,80 0 0 1 300,540" fill="none" stroke="#ccc" stroke-width="5" stroke-linecap="round" stroke-dasharray="7,6"/>
+      <path id="path-45a" d="M300,540 A 80,80 0 0 1 190,615" fill="none" stroke="#ccc" stroke-width="5" stroke-linecap="round" stroke-dasharray="7,6"/>
+      <path id="path-45b" d="M190,615 A 80,80 0 0 0 80,690"  fill="none" stroke="#ccc" stroke-width="5" stroke-linecap="round" stroke-dasharray="7,6"/>
+      <path id="path-56a" d="M80,690  A 80,80 0 0 0 190,753" fill="none" stroke="#ccc" stroke-width="5" stroke-linecap="round" stroke-dasharray="7,6"/>
+      <path id="path-56b" d="M190,753 A 80,80 0 0 1 300,816" fill="none" stroke="#ccc" stroke-width="5" stroke-linecap="round" stroke-dasharray="7,6"/>
+      <!-- waypoint dots -->
       <circle cx="190" cy="155" r="9" fill="#018AC8" stroke="#1A1A1A" stroke-width="2"/>
-      <circle cx="190" cy="310" r="18" fill="#FD540B" opacity="0"><animate attributeName="opacity" values="0;.28;0" dur="1.6s" repeatCount="indefinite"/></circle>
-      <circle cx="190" cy="310" r="9" fill="#018AC8" stroke="#1A1A1A" stroke-width="2"/>
-      <circle cx="190" cy="465" r="9" fill="#ccc" stroke="#bbb" stroke-width="1.8"/>
-      <circle cx="190" cy="615" r="9" fill="#ccc" stroke="#bbb" stroke-width="1.8"/>
-      <circle cx="190" cy="753" r="9" fill="#ccc" stroke="#bbb" stroke-width="1.8"/>
-      <g onclick="openLesson(0)" style="cursor:pointer"><circle cx="80" cy="80" r="30" fill="#FD540B" stroke="#1A1A1A" stroke-width="3"/><circle cx="80" cy="80" r="23" fill="none" stroke="#FFF4D6" stroke-width="1.8" stroke-dasharray="4,3"/><text x="80" y="88" text-anchor="middle" font-size="22">👋</text><circle cx="103" cy="57" r="12" fill="#018AC8" stroke="#1A1A1A" stroke-width="2"/><text x="103" y="62" text-anchor="middle" font-size="11" font-family="Oswald,sans-serif" font-weight="700" fill="#fff">✓</text></g>
-      <text x="124" y="68" font-size="8" font-family="Oswald,sans-serif" font-weight="700" fill="#FD540B" letter-spacing="1.5">★ LESSON 01</text>
-      <text x="124" y="82" font-size="14" font-family="Oswald,sans-serif" font-weight="700" fill="#1A1A1A">打招呼</text>
-      <text x="124" y="96" font-size="9" font-family="Oswald,sans-serif" fill="#555">自我介紹・問候</text>
-      <circle cx="300" cy="230" r="44" fill="#FD540B" opacity="0"><animate attributeName="r" values="30;46;30" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".14;0;.14" dur="1.8s" repeatCount="indefinite"/></circle>
-      <g onclick="openLesson(1)" style="cursor:pointer"><circle cx="300" cy="230" r="28" fill="#C8B89A" stroke="#999" stroke-width="2.5"/><circle cx="300" cy="230" r="21" fill="none" stroke="#DDD" stroke-width="1.5" stroke-dasharray="3,3"/><text x="300" y="226" text-anchor="middle" font-size="18" opacity=".4">🛍️</text><rect x="292" y="232" width="16" height="11" rx="3" fill="#777" stroke="#555" stroke-width="1.2"/><path d="M295,232 C295,225 305,225 305,232" fill="none" stroke="#777" stroke-width="2.5" stroke-linecap="round"/><rect x="298" y="235" width="4" height="5" rx="1" fill="#DDD"/></g>
-      <text x="262" y="218" text-anchor="end" font-size="8" font-family="Oswald,sans-serif" font-weight="700" fill="#aaa" letter-spacing="1.5">LESSON 02</text>
-      <text x="262" y="232" text-anchor="end" font-size="14" font-family="Oswald,sans-serif" font-weight="700" fill="#aaa">買東西</text>
-      <text x="262" y="246" text-anchor="end" font-size="9" font-family="Oswald,sans-serif" fill="#bbb">🔒 LOCKED</text>
-      <g onclick="openLesson(2)" style="cursor:pointer"><circle cx="80" cy="390" r="28" fill="#C8B89A" stroke="#999" stroke-width="2.5"/><circle cx="80" cy="390" r="21" fill="none" stroke="#DDD" stroke-width="1.5" stroke-dasharray="3,3"/><text x="80" y="386" text-anchor="middle" font-size="18" opacity=".4">🍜</text><rect x="72" y="392" width="16" height="11" rx="3" fill="#777" stroke="#555" stroke-width="1.2"/><path d="M75,392 C75,385 85,385 85,392" fill="none" stroke="#777" stroke-width="2.5" stroke-linecap="round"/><rect x="78" y="395" width="4" height="5" rx="1" fill="#DDD"/></g>
-      <text x="120" y="378" font-size="8" font-family="Oswald,sans-serif" font-weight="700" fill="#aaa" letter-spacing="1.5">LESSON 03</text>
-      <text x="120" y="392" font-size="14" font-family="Oswald,sans-serif" font-weight="700" fill="#aaa">點餐</text>
-      <text x="120" y="406" font-size="9" font-family="Oswald,sans-serif" fill="#bbb">🔒 LOCKED</text>
-      <g onclick="openLesson(3)" style="cursor:pointer"><circle cx="300" cy="540" r="28" fill="#C8B89A" stroke="#999" stroke-width="2.5"/><circle cx="300" cy="540" r="21" fill="none" stroke="#DDD" stroke-width="1.5" stroke-dasharray="3,3"/><text x="300" y="536" text-anchor="middle" font-size="18" opacity=".4">🍸</text><rect x="292" y="542" width="16" height="11" rx="3" fill="#777" stroke="#555" stroke-width="1.2"/><path d="M295,542 C295,535 305,535 305,542" fill="none" stroke="#777" stroke-width="2.5" stroke-linecap="round"/><rect x="298" y="545" width="4" height="5" rx="1" fill="#DDD"/></g>
-      <text x="264" y="528" text-anchor="end" font-size="8" font-family="Oswald,sans-serif" font-weight="700" fill="#aaa" letter-spacing="1.5">LESSON 04</text>
-      <text x="264" y="542" text-anchor="end" font-size="13" font-family="Oswald,sans-serif" font-weight="700" fill="#aaa">酒吧&amp;按摩</text>
-      <text x="264" y="556" text-anchor="end" font-size="9" font-family="Oswald,sans-serif" fill="#bbb">🔒 LOCKED</text>
-      <g onclick="openLesson(4)" style="cursor:pointer"><circle cx="80" cy="690" r="28" fill="#C8B89A" stroke="#999" stroke-width="2.5"/><circle cx="80" cy="690" r="21" fill="none" stroke="#DDD" stroke-width="1.5" stroke-dasharray="3,3"/><text x="80" y="686" text-anchor="middle" font-size="18" opacity=".4">🌟</text><rect x="72" y="692" width="16" height="11" rx="3" fill="#777" stroke="#555" stroke-width="1.2"/><path d="M75,692 C75,685 85,685 85,692" fill="none" stroke="#777" stroke-width="2.5" stroke-linecap="round"/><rect x="78" y="695" width="4" height="5" rx="1" fill="#DDD"/></g>
-      <text x="120" y="678" font-size="8" font-family="Oswald,sans-serif" font-weight="700" fill="#aaa" letter-spacing="1.5">LESSON 05</text>
-      <text x="120" y="692" font-size="14" font-family="Oswald,sans-serif" font-weight="700" fill="#aaa">稱讚</text>
-      <text x="120" y="706" font-size="9" font-family="Oswald,sans-serif" fill="#bbb">🔒 LOCKED</text>
-      <g onclick="openLesson(5)" style="cursor:pointer"><circle cx="300" cy="816" r="28" fill="#C8B89A" stroke="#999" stroke-width="2.5"/><circle cx="300" cy="816" r="21" fill="none" stroke="#DDD" stroke-width="1.5" stroke-dasharray="3,3"/><text x="300" y="812" text-anchor="middle" font-size="18" opacity=".4">🌃</text><rect x="292" y="818" width="16" height="11" rx="3" fill="#777" stroke="#555" stroke-width="1.2"/><path d="M295,818 C295,811 305,811 305,818" fill="none" stroke="#777" stroke-width="2.5" stroke-linecap="round"/><rect x="298" y="821" width="4" height="5" rx="1" fill="#DDD"/></g>
-      <text x="264" y="804" text-anchor="end" font-size="8" font-family="Oswald,sans-serif" font-weight="700" fill="#aaa" letter-spacing="1.5">LESSON 06</text>
-      <text x="264" y="818" text-anchor="end" font-size="14" font-family="Oswald,sans-serif" font-weight="700" fill="#aaa">夜市</text>
-      <text x="264" y="832" text-anchor="end" font-size="9" font-family="Oswald,sans-serif" fill="#bbb">🔒 LOCKED</text>
+      <circle id="dot-310" cx="190" cy="310" r="9" fill="#018AC8" stroke="#1A1A1A" stroke-width="2"/>
+      <circle id="dot-465" cx="190" cy="465" r="9" fill="#ccc" stroke="#bbb" stroke-width="1.8"/>
+      <circle id="dot-615" cx="190" cy="615" r="9" fill="#ccc" stroke="#bbb" stroke-width="1.8"/>
+      <circle id="dot-753" cx="190" cy="753" r="9" fill="#ccc" stroke="#bbb" stroke-width="1.8"/>
+      <!-- lesson nodes: rendered dynamically by updateMapNodes() -->
+      <g id="map-node-0" onclick="openLesson(0)" style="cursor:pointer"></g>
+      <g id="map-node-1" onclick="openLesson(1)" style="cursor:pointer"></g>
+      <g id="map-node-2" onclick="openLesson(2)" style="cursor:pointer"></g>
+      <g id="map-node-3" onclick="openLesson(3)" style="cursor:pointer"></g>
+      <g id="map-node-4" onclick="openLesson(4)" style="cursor:pointer"></g>
+      <g id="map-node-5" onclick="openLesson(5)" style="cursor:pointer"></g>
     </svg>
   </div>
   <div class="sp"></div>
@@ -1087,7 +1070,118 @@ function showTrophy(lessonNum){
 }
 function closeTrophy(){document.getElementById('trophy-overlay').classList.remove('show');}
 
-function markNodePerfect(lessonNum){const pos={1:{cx:80,cy:80},2:{cx:300,cy:230},3:{cx:80,cy:390},4:{cx:300,cy:540},5:{cx:80,cy:690},6:{cx:300,cy:816}};const p=pos[lessonNum];if(!p)return;const svg=document.querySelector('.map-svg');if(!svg||svg.querySelector('#perfect-'+lessonNum))return;const g=document.createElementNS('http://www.w3.org/2000/svg','g');g.id='perfect-'+lessonNum;const c=document.createElementNS('http://www.w3.org/2000/svg','circle');c.setAttribute('cx',p.cx+22);c.setAttribute('cy',p.cy-22);c.setAttribute('r','12');c.setAttribute('fill','#FBC83D');c.setAttribute('stroke','#1A1A1A');c.setAttribute('stroke-width','2');const s=document.createElementNS('http://www.w3.org/2000/svg','text');s.setAttribute('x',p.cx+22);s.setAttribute('y',p.cy-17);s.setAttribute('text-anchor','middle');s.setAttribute('font-size','12');s.textContent='⭐';g.appendChild(c);g.appendChild(s);svg.appendChild(g);}
+// ── MAP NODE DATA ──
+const MAP_NODES = [
+  {idx:0, cx:80,  cy:80,  emoji:'👋', label:'★ LESSON 01', name:'打招呼',   sub:'自我介紹・問候',   tx:124, ty:[68,82,96],  anchor:'start'},
+  {idx:1, cx:300, cy:230, emoji:'🛍️', label:'LESSON 02',  name:'買東西',   sub:'殺價・討價還價',   tx:262, ty:[218,232,246], anchor:'end'},
+  {idx:2, cx:80,  cy:390, emoji:'🍜', label:'LESSON 03',  name:'點餐',     sub:'手指+這句萬用',    tx:120, ty:[378,392,406], anchor:'start'},
+  {idx:3, cx:300, cy:540, emoji:'🍸', label:'LESSON 04',  name:'酒吧&amp;按摩', sub:'夜晚社交必備', tx:264, ty:[528,542,556], anchor:'end'},
+  {idx:4, cx:80,  cy:690, emoji:'🌟', label:'LESSON 05',  name:'稱讚',     sub:'讓人秒融化魔法句', tx:120, ty:[678,692,706], anchor:'start'},
+  {idx:5, cx:300, cy:816, emoji:'🌃', label:'LESSON 06',  name:'夜市小吃', sub:'泰國必吃全攻略',   tx:264, ty:[804,818,832], anchor:'end'},
+];
+
+// Path pairs that light up when a lesson is unlocked
+const MAP_PATHS = [
+  [],                           // L1 always lit
+  ['path-01','path-12'],        // unlocked when L1 done
+  ['path-23a','path-23b'],      // unlocked when L2 done
+  ['path-34a','path-34b'],      // etc.
+  ['path-45a','path-45b'],
+  ['path-56a','path-56b'],
+];
+const MAP_DOTS = [null, null, 'dot-310', 'dot-465', 'dot-615', 'dot-753'];
+
+function updateMapNodes() {
+  const NS = 'http://www.w3.org/2000/svg';
+
+  MAP_NODES.forEach(n => {
+    const g = document.getElementById('map-node-' + n.idx);
+    if (!g) return;
+    g.innerHTML = '';
+
+    const unlocked  = isLessonUnlocked(n.idx);
+    const completed = completedLessons.has(n.idx);
+    const perfect   = perfectCleared.has(n.idx + 1); // perfectCleared 存 1-based lessonNum
+
+    const mk = (tag, attrs) => {
+      const el = document.createElementNS(NS, tag);
+      Object.entries(attrs).forEach(([k,v]) => el.setAttribute(k, v));
+      return el;
+    };
+
+    if (unlocked) {
+      // 橘色解鎖節點
+      g.appendChild(mk('circle', {cx:n.cx, cy:n.cy, r:'30', fill:'#FD540B', stroke:'#1A1A1A', 'stroke-width':'3'}));
+      g.appendChild(mk('circle', {cx:n.cx, cy:n.cy, r:'23', fill:'none', stroke:'#FFF4D6', 'stroke-width':'1.8', 'stroke-dasharray':'4,3'}));
+      const em = mk('text', {x:n.cx, y:n.cy+8, 'text-anchor':'middle', 'font-size':'22'});
+      em.textContent = n.emoji; g.appendChild(em);
+      // 右上角標章：金色⭐優先（完美通關），其次藍色✓（普通完成）
+      if (perfect) {
+        // 金色星星標章（完美通關，覆蓋藍色勾勾）
+        g.appendChild(mk('circle', {cx:n.cx+22, cy:n.cy-22, r:'12', fill:'#FBC83D', stroke:'#1A1A1A', 'stroke-width':'2'}));
+        const star = mk('text', {x:n.cx+22, y:n.cy-17, 'text-anchor':'middle', 'font-size':'12'});
+        star.textContent = '⭐'; g.appendChild(star);
+      } else if (completed) {
+        // 藍色勾勾（普通完成）
+        g.appendChild(mk('circle', {cx:n.cx+22, cy:n.cy-22, r:'12', fill:'#018AC8', stroke:'#1A1A1A', 'stroke-width':'2'}));
+        const chk = mk('text', {x:n.cx+22, y:n.cy-17, 'text-anchor':'middle', 'font-size':'11', 'font-family':'Oswald,sans-serif', 'font-weight':'700', fill:'#fff'});
+        chk.textContent = '✓'; g.appendChild(chk);
+      }
+      // 標籤文字
+      const lc = n.anchor === 'end' ? '#FD540B' : '#FD540B';
+      const [t1,t2,t3] = n.ty;
+      const lbl = mk('text', {x:n.tx, y:t1, 'text-anchor':n.anchor, 'font-size':'8', 'font-family':'Oswald,sans-serif', 'font-weight':'700', fill:'#FD540B', 'letter-spacing':'1.5'});
+      lbl.textContent = '★ ' + n.label; g.appendChild(lbl);
+      const nm = mk('text', {x:n.tx, y:t2, 'text-anchor':n.anchor, 'font-size':'14', 'font-family':'Oswald,sans-serif', 'font-weight':'700', fill:'#1A1A1A'});
+      nm.innerHTML = n.name; g.appendChild(nm);
+      const sb = mk('text', {x:n.tx, y:t3, 'text-anchor':n.anchor, 'font-size':'9', 'font-family':'Oswald,sans-serif', fill:'#555'});
+      sb.textContent = n.sub; g.appendChild(sb);
+    } else {
+      // 灰色鎖定節點
+      g.appendChild(mk('circle', {cx:n.cx, cy:n.cy, r:'28', fill:'#C8B89A', stroke:'#999', 'stroke-width':'2.5'}));
+      g.appendChild(mk('circle', {cx:n.cx, cy:n.cy, r:'21', fill:'none', stroke:'#DDD', 'stroke-width':'1.5', 'stroke-dasharray':'3,3'}));
+      const em = mk('text', {x:n.cx, y:n.cy-4, 'text-anchor':'middle', 'font-size':'18', opacity:'.35'});
+      em.textContent = n.emoji; g.appendChild(em);
+      // 鎖頭
+      g.appendChild(mk('rect',  {x:n.cx-8, y:n.cy+2,  width:'16', height:'11', rx:'3', fill:'#777', stroke:'#555', 'stroke-width':'1.2'}));
+      g.appendChild(mk('path',  {d:`M${n.cx-5},${n.cy+2} C${n.cx-5},${n.cy-5} ${n.cx+5},${n.cy-5} ${n.cx+5},${n.cy+2}`, fill:'none', stroke:'#777', 'stroke-width':'2.5', 'stroke-linecap':'round'}));
+      g.appendChild(mk('rect',  {x:n.cx-2, y:n.cy+5,  width:'4',  height:'5',  rx:'1', fill:'#DDD'}));
+      // 標籤
+      const [t1,t2,t3] = n.ty;
+      const l1 = mk('text', {x:n.tx, y:t1, 'text-anchor':n.anchor, 'font-size':'8',  'font-family':'Oswald,sans-serif', 'font-weight':'700', fill:'#aaa', 'letter-spacing':'1.5'});
+      l1.textContent = n.label; g.appendChild(l1);
+      const l2 = mk('text', {x:n.tx, y:t2, 'text-anchor':n.anchor, 'font-size':'14', 'font-family':'Oswald,sans-serif', 'font-weight':'700', fill:'#aaa'});
+      l2.innerHTML = n.name; g.appendChild(l2);
+      const l3 = mk('text', {x:n.tx, y:t3, 'text-anchor':n.anchor, 'font-size':'9',  'font-family':'Oswald,sans-serif', fill:'#bbb'});
+      l3.textContent = '🔒 LOCKED'; g.appendChild(l3);
+    }
+  });
+
+  // Update path colours
+  MAP_NODES.forEach((n, i) => {
+    if (i === 0) return;
+    const paths = MAP_PATHS[i];
+    const lit = completedLessons.has(i - 1); // path lights up when PREVIOUS lesson done
+    paths.forEach(pid => {
+      const p = document.getElementById(pid);
+      if (p) p.setAttribute('stroke', lit ? '#1A1A1A' : '#ccc');
+    });
+    // waypoint dot
+    const dotId = MAP_DOTS[i];
+    if (dotId) {
+      const dot = document.getElementById(dotId);
+      if (dot) {
+        dot.setAttribute('fill', lit ? '#018AC8' : '#ccc');
+        dot.setAttribute('stroke', lit ? '#1A1A1A' : '#bbb');
+      }
+    }
+  });
+}
+
+function markNodePerfect(lessonNum) {
+  // lessonNum is 1-based; just re-render map which reads perfectCleared
+  updateMapNodes();
+}
 
 // ── ACHIEVEMENTS ──
 function checkAchievement(id){const ach=ACHIEVEMENTS.find(a=>a.id===id);if(!ach||ach.unlocked)return;ach.count++;if(ach.count>=ach.target){ach.unlocked=true;saveProgress();setTimeout(()=>showAchOverlay(ach),300);renderTrophyPage();}}
@@ -1195,6 +1289,7 @@ function pickLQ(btn,chosen,correct){
     if(isLast){
       completedLessons.add(currentLesson);
       saveProgress(); // 儲存完成課程
+      updateMapNodes(); // 即時更新地圖節點
       ACHIEVEMENTS.find(a=>a.id==='master').count=completedLessons.size;
       checkAchievement('master');
       setTimeout(()=>{
@@ -1953,6 +2048,7 @@ function spawnConfetti(){const colors=['#FD540B','#018AC8','#FFF4D6','#1A1A1A','
 
 // ── INIT ──
 updateXPBar();
+updateMapNodes();
 renderLesson(0);
 renderSabaiHome();
 renderTrophyPage();
